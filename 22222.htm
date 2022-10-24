@@ -1,0 +1,92 @@
+﻿<html>
+ <title>作業二</title>
+ <head>
+        <style>
+            p, h1 {
+                color: #77f
+            }
+
+                p font {
+                    color: #f77
+                }
+				input{
+				    width:50px;
+				    height:50px
+				}
+				#result{
+				    width:250px;
+				    height:40px
+				}
+				table{
+				     margin:20px auto;
+					 border:3px solid #d0d0d0}
+        </style>
+    </head>
+<body bgcolor="#FFD4D4">
+ <h1 align="center">計算機君</h1>
+        <p align="center">快來算數學啦</p>
+
+<table>
+ 
+	<tr><td colspan="4"><input type="text" id="result" disabled></td></tr>
+	<tr>
+		<td><input type="button" id="k7" value="7"></td>
+		<td><input type="button" id="k8" value="8"></td>
+		<td><input type="button" id="k9" value="9"></td>
+		<td><input type="button" id="kEq" value="="></td>
+	</tr>
+	<tr>
+		<td><input type="button" id="k4" value="4"></td>
+		<td><input type="button" id="k5" value="5"></td>
+		<td><input type="button" id="k6" value="6"></td>
+		<td><input type="button" id="kDiv" value="/"></td>
+	</tr>
+	<tr>
+		<td><input type="button" id="k1" value="1"></td>
+		<td><input type="button" id="k2" value="2"></td>
+		<td><input type="button" id="k3" value="3"></td>
+		<td><input type="button" id="kMul" value="*"></td>
+	</tr>
+	<tr>
+		<td><input type="button" id="k0" value="0"></td>
+		<td><input type="button" id="kPoint" value="."></td>
+		<td><input type="button" id="kPlus" value="+"></td>
+		<td><input type="button" id="kMinus" value="-"></td>
+	</tr>
+	<tr>
+		<td><input type="button" id="kClear" value="C"></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+
+<script>
+	result = document.getElementById("result");
+	document.getElementById("k0").onclick = function(){result.value += "0";};
+	document.getElementById("k1").onclick = function(){result.value += "1";};
+	document.getElementById("k2").onclick = function(){result.value += "2";};
+	document.getElementById("k3").onclick = function(){result.value += "3";};
+	document.getElementById("k4").onclick = function(){result.value += "4";};
+	document.getElementById("k5").onclick = function(){result.value += "5";};
+	document.getElementById("k6").onclick = function(){result.value += "6";};
+	document.getElementById("k7").onclick = function(){result.value += "7";};
+	document.getElementById("k8").onclick = function(){result.value += "8";};
+	document.getElementById("k9").onclick = function(){result.value += "9";};
+	document.getElementById("kPlus").onclick = function(){result.value += "+";};
+	document.getElementById("kMinus").onclick = function(){result.value += "-";};
+	document.getElementById("kMul").onclick = function(){result.value += "*";};
+	document.getElementById("kDiv").onclick = function(){result.value += "/";};
+	document.getElementById("kPoint").onclick = function(){result.value += ".";};
+	document.getElementById("kClear").onclick = function(){result.value = "";};
+	document.getElementById("kEq").onclick = function(){
+		try {
+			result.value = eval(result.value);
+		}
+		catch(e){
+			alert('Error!');
+		}
+	};
+</script>
+
+</body></html>
