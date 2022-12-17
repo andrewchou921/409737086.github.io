@@ -1,0 +1,67 @@
+/* CSS Document */
+
+:root {
+    --scene-width: 250;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: calc(100vw / 1920 * var(--scene-width));
+  background-color: transparent;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 9;
+    
+  /* pop-up effect */
+  transform: scale3d( .2, .2, 1);
+  transition: all .2s ease-in-out;     
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  
+  /* pop-up effect */
+  transform: scale3d( 1, 1, 1);
+  transition: all .2s ease-in-out;   
+  }
+
+
+/* add img style */
+    .tooltiptext img {
+      aspect-ratop: 1/1;
+      max-width: var(--scene-width); /* */
+      width: calc(100vw / 1920 * var(--scene-width));   
+/*      border-radius: 50%;*/
+      border: calc(100vw / 1920 * 6) solid #FFF;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+
+/* add position property */
+
+
+
+.tooltiptext.right-up {
+    bottom: 50%;
+    left: 50%;
+    margin-left: calc(var(--scene-width) / 2); 
+}
+.tooltiptext.right-down {
+    top:50%;
+}
+
+.tooltiptext.left-up {
+    bottom: 50%;
+    right: 50%;
+    
+}
+.tooltiptext.left-down {
+    top:50%;
+    right: 50%;
+}
+
