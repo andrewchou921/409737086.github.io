@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>周得智的網站</title>
+    <style>
+        body{margin: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr ;
+            grid-template-rows:60px 1fr 1fr 100px;
+            grid-gap: 10px;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+         .container div{
+            border-width: 8px;
+            border-color: salmon;
+            border-style:solid ;
+            padding: 15px;
+            border-radius:17px;
+        }
+        .header{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            color:white;
+            background-color:salmon ;
+            text-align: center;
+            font-size: 25px ;
+            box-sizing: border-box; 
+           
+            }
+        
+        .big-content{
+            grid-column-start: 1;
+            grid-column-end:span:2;
+            grid-row-start: 2;
+            grid-row-end:2;
+            
+    
+        }
+
+    
+        .footer{
+            grid-column: 1/span 3;
+            text-align: center;
+             background-color: antiquewhite;
+            
+        }
+        
+        
+        p {text-align: ;
+            font-size:17PX;
+            color:SaddleBrown;}
+        img{text-align:center}
+        body {
+            background-color: bisque
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">粉紅凍奶作法</div>
+        
+        <div class="big-content">
+            <p><a class="nav"href="index.html" ><img src="image/b6.png"width="80%" ></a></p>
+            <p><a href="bobatea.html" ><img src="image/b2.png"width="80%" ></a></p>
+            <p><a href="taimilktea.html" ><img src="image/b3.png"width="80%" ></a></p>
+            <p><a href="reference.html" ><img src="image/b5.png"width="80%" ></a></p>
+            <p><a class="nav"href="map/map.html" ><img src="image/d1.png"width="50%" ></a></p>
+        </div>
+        
+        <div class="small-content">
+             <p><b>準備材料：</b></p>
+             <p>泰國神童牌紅糖漿 45ml</p>
+             <p>三花奶水或鮮奶 40ml</p>
+             <p>熱水 100ml</p>
+             <p>砂糖 </p>
+             <p>煉乳 </p>
+             <p>冰塊 </p>
+             <p><img src="image/pinktea.gif"width="88%" ></p>
+
+        </div>
+        
+        <div class="small-content">
+            <p><b>作法：</b></p>
+            <p>1.加入神童牌紅糖漿45 ml，和煉乳、砂糖（可加可不加）及熱水100 ml，顏色深淺取決於你糖水所加入的量。</p>
+            <p>2.倒入三花奶水40 ml（奶水是用於提升奶香層次感）。</p>
+            <p>3.將上述材料充分混合攪拌。</p>
+            <p>4.取一裝滿冰塊的杯子後將調和好的凍奶倒入，一杯粉紅凍奶就完成囉～～</p>
+            </div>
+        <div class="footer">
+            <p><b>教學影片</b></p>
+            <p><iframe width="840" height="427.5" src="https://www.youtube.com/embed/hEbI-8mxc9M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+        </div>
+    
+    
+
+
+
+    <!--<p><a href="schedule.html" target="blank">我的課表</a></p>
+    <p><a href="index.html" target="blank">我的首頁</a></p>
+    -->
+</body>
+</html>
